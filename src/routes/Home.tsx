@@ -43,7 +43,7 @@ const Home = () => {
       </section>
       <section className='portfolio-section'>
         <h1>My Portfolio</h1>
-        <article className='portfolio-article my-5'>
+        <article className='portfolio-article mt-3'>
           <div className='portfolio-item'>
             <h5>Revive Ltd: Hard Surface Repair Specialists</h5>
             <Link 
@@ -86,8 +86,34 @@ const Home = () => {
             </Link>
             <p className='mt-3'>A exercise to create a fullstack application for puppy lovers using React and Typescript</p>
           </div>
-
-
+          <div className='portfolio-item'>
+            <h5>The Milk Store</h5>
+            <Link 
+              to='https://github.com/bobbybish81/typescript-test-milkApp-vite'
+              target="_blank"
+              rel="noreferrer">
+              <img
+                className='portfolio-img'
+                src={require('../assets/portfolio4.png')}
+                alt='porfolio-img to appear'
+                />
+            </Link>
+            <p className='mt-3'>This exercise was to create an application using React & Typescript which retrieves and displays mock data from an api that the user can be easily navigate through and place a mock order.</p>
+          </div>
+          <div className='portfolio-item'>
+            <h5>Quizzie Rascal</h5>
+            <Link 
+              to='https://quizzierascal.netlify.app'
+              target="_blank"
+              rel="noreferrer">
+              <img
+                className='portfolio-img'
+                src={require('../assets/portfolio5.png')}
+                alt='porfolio-img to appear'
+                />
+            </Link>
+            <p className='mt-3'>Quizzie Rascal is a fully deployed quiz game that presents the user with 10 random questions with 4 possible answers thast are to be answered as quickly as possible.</p>
+          </div>
         </article>
       </section>
     </main>
