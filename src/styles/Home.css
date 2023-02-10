@@ -1,0 +1,138 @@
+.desktop {
+  display: none;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem 2rem 4rem;
+  color: #fff;
+}
+
+.welcome-tag {
+  letter-spacing: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #fff;
+  padding-right: 2rem;
+  font-weight: 600;
+}
+
+.navlink:hover {
+  color: #08ee05;
+  cursor: pointer;
+}
+
+.intro-section {
+  height: 700px;
+  background-image: url('../assets/image1.webp');
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+}
+
+.intro-text {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.contact-btn {
+  background-color: #075624;
+  border: 1px solid #0c923d;
+  border-radius: 0.4rem;
+  color: #fff;
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+}
+
+.contact-btn:hover {
+  background-color: #0c923d;
+  cursor: pointer;
+}
+
+.aboutme-section h1,
+.portfolio-section h1 {
+  margin: 0 2rem;
+  padding: 2rem;
+  font-weight: 700;
+  color: #075624;
+  text-align: center;
+  border-bottom: 1px solid #d4d3d3;
+}
+
+.aboutme-img, .hobbies-img {
+  margin: 0;
+  width: 50%;
+  border: 1px solid #eceaea;
+}
+
+.about-text {
+  width: 50%;
+  margin: 0;
+  padding: 0 2rem;
+  color: #6c6b6b;
+}
+
+.about-text h5 {
+  font-weight: 550;
+  margin: 2rem 0;
+  color: #075624;
+}
+
+.about-text p {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.portfolio-section {
+  background-color: #f9f7f7;
+}
+
+.portfolio-article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 2rem;
+}
+
+.portfolio-item {
+  padding: 1rem;
+  color: #6c6b6b;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.portfolio-item h5 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #075624;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 250px;
+  cursor: pointer;
+  border: 1px solid #e3e4e3;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  
+  .desktop {
+    display: flex;
+  }
+}
