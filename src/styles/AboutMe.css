@@ -1,0 +1,86 @@
+.aboutme-article,
+.mobile-aboutme-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-aboutme-article {
+  display: none;
+}
+
+.aboutme-section h1 {
+  margin: 0 2rem;
+  padding: 2rem;
+  font-weight: 700;
+  color: #075624;
+  text-align: center;
+  border-bottom: 1px solid #d4d3d3;
+}
+
+.aboutme-img, .hobbies-img {
+  margin: 0;
+  width: 100%;
+  border: 1px solid #eceaea;
+}
+
+.hobbies-img {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #eceaea;
+}
+
+.about-text {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #6c6b6b;
+}
+
+.about-text h5 {
+  font-weight: 550;
+  margin: 2rem 0;
+  color: #075624;
+}
+
+.about-text p {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+@media screen and (min-width: 1280px) {
+
+  .mobile-aboutme-article {
+    display: none;
+  }
+  
+  .aboutme-article,
+  .desktop-aboutme-article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aboutme-img, .hobbies-img {
+    width: 50%;
+  }
+
+  .hobbies-img {
+    margin: 0;
+  }
+
+  .about-text {
+    width: 50%;
+    padding: 0 2rem;
+  }
+
+  /* .about-text p {
+    font-size: 1rem;
+  } */
+  .about-text p {
+    font-size: 1.2rem;
+  }
+}

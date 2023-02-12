@@ -1,0 +1,37 @@
+.socialmedia-section h1 {
+  margin: 0 2rem;
+  padding: 2rem;
+  font-weight: 700;
+  color: #075624;
+  text-align: center;
+  border-bottom: 1px solid #d4d3d3;
+}
+
+.social-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 1rem;
+}
+
+#instagram-icon {
+  height: 2rem;
+  width: 2rem;
+  background-color: #E12F6C;
+  color: #fff;
+  padding: 0.25rem;
+  border-radius: 50%;
+}
+
+#github-icon {
+  color: #2B2E32;
+}
+
+#linkedin-icon {
+  color: #2767B2;
+}
+
+@media screen and (min-width: 768px) { 
+  .social-icon {
+    margin: 2rem;
+  }
+}

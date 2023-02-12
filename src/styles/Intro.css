@@ -1,0 +1,38 @@
+.intro-section {
+  height: 700px;
+  background-image: url('../assets/desktop-intro.webp');
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+}
+
+.intro-text {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.contact-btn {
+  background-color: #075624;
+  border: 1px solid #0c923d;
+  border-radius: 0.4rem;
+  color: #fff;
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+}
+
+.contact-btn:hover {
+  background-color: #0c923d;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+
+  .intro-section {
+    height: 700px;
+    background-image: url('../assets/desktop-intro.webp');
+  }
+
+}

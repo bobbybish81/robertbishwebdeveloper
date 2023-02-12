@@ -1,12 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from './routes/Home';
+import DesktopHome from './routes/DesktopHome';
+import MobileHome from './routes/MobileHome';
 import Contact from './routes/Contact';
 
 const App = () => {
+  
   return (
     <Routes>
-      <Route path='/' element={< Home/>}></Route>
-      <Route path='/contactme' element={< Contact/>}></Route>
+      <Route path='/' element={<><DesktopHome/><MobileHome/></>}></Route>
+      <Route path='/contactme' element={<Contact/>}></Route>
     </Routes>
   );
 }
