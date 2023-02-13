@@ -1,13 +1,10 @@
 import Social from '../components/Social';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
-import { Link, useNavigate } from 'react-router-dom';
-import { useFormik } from 'formik';
+import { Link } from 'react-router-dom';
 import '../styles/Contact.css';
 
 const Contact = () => {
-
-  const navigate = useNavigate();
 
   return (
     <main className='contact w-100'>

@@ -1,10 +1,13 @@
+import { useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import '../styles/Contact.css';
 
 const ContactForm = () => {
 
-  const onSubmit = async (values:any) => {
+  const navigate = useNavigate()
 
+  const onSubmit = async (values:any) => {
+    navigate('/')
   }
 
   const formik = useFormik({

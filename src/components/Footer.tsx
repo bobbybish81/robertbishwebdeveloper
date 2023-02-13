@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
-
 const Footer = () => {
+
   return (
     <footer className='p-5 d-flex justify-content-center align-items-center bg-black'>
       <div className='d-flex flex-column justify-content-center align-items-center'>
