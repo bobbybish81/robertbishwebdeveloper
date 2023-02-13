@@ -11,7 +11,7 @@ const Intro = () => {
         <h1 className='intro-text'>Robert Bish</h1>
         <h1 className='intro-text'>Fullstack Javascript Developer</h1>
         <h5 className='mt-4'>Get to know me!</h5>
-        <button className='contact-btn' onClick={() => navigate('/')}>Contact Me</button>
+        <button className='contact-btn' onClick={() => navigate('/contactme')}>Contact Me</button>
       </article>
     </section>
   )

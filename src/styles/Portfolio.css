@@ -1,5 +1,7 @@
 .portfolio-section {
   background-color: #f9f7f7;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .portfolio-section h1 {
