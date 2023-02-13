@@ -28,9 +28,10 @@ const Contact = () => {
         <article className='contact-article'>
         <ContactForm/>
           <div>
-            <h3>Questions or Comments</h3>
+            <h4>Questions or Comments</h4>
             <p>Send me a message or ask me a question using this form. I will do my best to get back to you soon!</p>
-            <h3>Robert Bish Web Developer</h3>
+            <br></br>
+            <h5>Robert Bish Web Developer</h5>
           </div>
         </article>
       </section>

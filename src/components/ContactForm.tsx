@@ -20,7 +20,7 @@ const ContactForm = () => {
       <form 
         onSubmit={formik.handleSubmit}
         className='contact-form'>
-        <h3>Get in Touch!</h3>
+        <h4>Get in Touch!</h4>
         <input
           type='text'
           name='name'
