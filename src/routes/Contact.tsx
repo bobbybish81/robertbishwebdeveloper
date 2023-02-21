@@ -20,10 +20,20 @@ const Contact = () => {
         </div>
       </nav>
       <Social/>
-      <section className='contact-section'>
-        <h1>Contact Me</h1>
+      <section className='mobile-contact-section'>
+        <h1 className='contact-section-heading'>Contact Me</h1>
         <article className='contact-article'>
-        <ContactForm/>
+          <div>
+            <h4>Questions or Comments</h4>
+            <p>Send me a message or ask me a question using this form. I will do my best to get back to you soon!</p>
+          </div>
+          <ContactForm/>
+        </article>
+      </section>
+      <section className='desktop-contact-section'>
+      <h1 className='contact-section-heading'>Contact Me</h1>
+        <article className='contact-article'>
+          <ContactForm/>
           <div>
             <h4>Questions or Comments</h4>
             <p>Send me a message or ask me a question using this form. I will do my best to get back to you soon!</p>

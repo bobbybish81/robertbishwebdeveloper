@@ -1,47 +1,49 @@
-import { useNavigate } from 'react-router-dom';
-import { useFormik } from 'formik';
+import { useRef, useLayoutEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
 const ContactForm = () => {
 
-  const navigate = useNavigate()
+  const form = useRef<HTMLFormElement>(null!);
 
-  const onSubmit = async (values:any) => {
-    navigate('/')
-  }
+  const sendEmail = (event:React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    emailjs.sendForm(
+      'service_gj84frs',
+      'template_8s9dbcc',
+      form.current,
+      'Pd_1AXpcYSUnKFy3Z'
+      ).then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    alert('Message sent to robertbishwebdeveloper.com')
+    window.location.reload();
+  };
 
-  const formik = useFormik({
-    initialValues: {
-    name: '',
-    email: '',
-    message: '',
-  },
-    onSubmit,
-  });
+  useLayoutEffect(() => {
+    window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+    });
+  })
 
   return (
       <form 
-        onSubmit={formik.handleSubmit}
-        className='contact-form'>
+        className='contact-form'
+        ref={form}
+        onSubmit={sendEmail}>
         <h4>Get in Touch!</h4>
         <input
           type='text'
-          name='name'
-          placeholder='Name'
-          value={formik.values.name}
-          onChange={formik.handleChange}/>
+          name='user_name'
+          placeholder='Enter Name'/>
         <input
           type='email'
-          name='email'
-          placeholder='Email*'
-          value={formik.values.email}
-          onChange={formik.handleChange}/>
-        <input
-          type='text'
-          name='message'
-          placeholder='Message'
-          value={formik.values.message}
-          onChange={formik.handleChange}/>
+          name='user_email'
+          placeholder='Enter Email Address'/>
+        <textarea name='message' placeholder='Add Message...'/>
         <button
           className='form-btn'
           type='submit'>
