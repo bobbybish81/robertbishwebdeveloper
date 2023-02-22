@@ -77,6 +77,20 @@ const Portfolio = () => {
             </Link>
             <p className='mt-3'>Quizzie Rascal is a fully deployed quiz game that presents the user with 10 random questions with 4 possible answers thast are to be answered as quickly as possible.</p>
           </div>
+          <div className='portfolio-item'>
+            <h5>Saltazon-Online</h5>
+            <Link 
+              to='https://saltazon-online.netlify.app'
+              target="_blank"
+              rel="noreferrer">
+              <img
+                className='portfolio-img'
+                src={require('../assets/portfolio6.png')}
+                alt='porfolio-img to appear'
+                />
+            </Link>
+            <p className='mt-3'>This exercise was to create an eCommerce app (reminiscent of Amazon) where users can make a mock purchase and administrators can add, change or delete up their own products.</p>
+          </div>
         </article>
       </section>
   )

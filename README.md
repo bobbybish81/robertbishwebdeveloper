@@ -1,3 +1,6 @@
+# Overview
+This application is a personal portfolio project built using react and typescript to demostrate my learnings as a web developer and give insight into my personality.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
