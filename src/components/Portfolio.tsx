@@ -89,7 +89,7 @@ const Portfolio = () => {
                 alt='porfolio-img to appear'
                 />
             </Link>
-            <p className='mt-3'>This exercise was to create an eCommerce app (reminiscent of Amazon) where users can make a mock purchase and administrators can add, change or delete up their own products.</p>
+            <p className='mt-3'>This exercise was to create an eCommerce app (reminiscent of Amazon) where users can make a mock purchase and administrators can add, change or delete their own products.</p>
           </div>
         </article>
       </section>
