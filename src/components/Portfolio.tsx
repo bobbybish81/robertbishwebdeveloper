@@ -91,6 +91,20 @@ const Portfolio = () => {
             </Link>
             <p className='mt-3'>This exercise was to create an eCommerce app (reminiscent of Amazon) where users can make a mock purchase and administrators can add, change or delete their own products.</p>
           </div>
+          <div className='portfolio-item'>
+            <h5>City Finder</h5>
+            <Link 
+              to='https://cityfinder.netlify.app'
+              target="_blank"
+              rel="noreferrer">
+              <img
+                className='portfolio-img'
+                src={require('../assets/portfolio7.png')}
+                alt='porfolio-img to appear'
+                />
+            </Link>
+            <p className='mt-3'>A game where the user has to find the city on a map when prompted to within 50km</p>
+          </div>
         </article>
       </section>
   )
