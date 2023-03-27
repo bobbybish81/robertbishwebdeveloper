@@ -18,21 +18,19 @@ const AboutMe = () => {
         </article>
         <article className='mobile-aboutme-article px-5'>
           <div className='about-text mb-5'>
-            <h5>My Hobbies</h5>
+          <h5>My Interests</h5>
             <img className='hobbies-img' src={require('../assets/hobbies.png')} alt='hobbies-img to appear'/>
-            <p>{`"When I'm not coding I really love to watch and play sports. Football is my first love. Many years before I had dreams of becoming a developer, my aspiration was to become a professional goalkeeper.
-            Unfortunately that dream wasn't to be but I continue to play even today for a local team here in Stockholm."`}</p>
-            <p>{`"I'm also a massive Liverpool fan and try to watch them whenever I can"`}</p>
-            <p>{`"I also enjoy movies, music events (singing is a guily pleasure of mine!) and of course spending time with friends and family"`}</p>
+            <p>{`"Personally, I love coding because it allows me to be creative and use my problem-solving skills to build something meaningful. I take great satisfaction from turning an idea into a functioning application!"`}</p>
+            <p>{`"When I'm not coding I really love to watch and play sports. Football is my first love. When growing up my aspiration was to become a professional goalkeeper however that dream wasn't to be but I continue to play for a local team here in Stockholm!"`}</p>
+            <p>{`"I also enjoy movies, music events and of course spending time with friends and family"`}</p>
           </div>
         </article>
         <article className='desktop-aboutme-article p-5'>
           <div className='about-text'>
-            <h5>My Hobbies</h5>
-            <p>{`"When I'm not coding I really love to watch and play sports. Football is my first love. Many years before I had dreams of becoming a developer, my aspiration was to become a professional goalkeeper.
-            Unfortunately that dream wasn't to be but I continue to play even today for a local team here in Stockholm."`}</p>
-            <p>{`"I'm also a massive Liverpool fan and try to watch them whenever I can"`}</p>
-            <p>{`"I also enjoy movies, music events (singing is a guily pleasure of mine!) and of course spending time with friends and family"`}</p>
+            <h5>My Interests</h5>
+            <p>{`"Personally, I love coding because it allows me to be creative and use my problem-solving skills to build something meaningful. I take great satisfaction from turning an idea into a functioning application!"`}</p>
+            <p>{`"When I'm not coding I really love to watch and play sports. Football is my first love. When growing up my aspiration was to become a professional goalkeeper however that dream wasn't to be but I continue to play for a local team here in Stockholm!"`}</p>
+            <p>{`"I also enjoy movies, music events and of course spending time with friends and family"`}</p>
           </div>
           <img className='hobbies-img' src={require('../assets/hobbies.png')} alt='hobbies-img to appear'/>
         </article>
