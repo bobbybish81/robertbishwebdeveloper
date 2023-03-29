@@ -15,7 +15,7 @@ const Portfolio = () => {
               rel="noreferrer">
               <img
                 className='portfolio-img'
-                src={require('../assets/portfolio1.png')}
+                src={require('../assets/portfolio1.webp')}
                 alt='porfolio-img to appear'
                 />
             </Link>
@@ -29,7 +29,7 @@ const Portfolio = () => {
               rel="noreferrer">
               <img
                 className='portfolio-img'
-                src={require('../assets/portfolio2.png')}
+                src={require('../assets/portfolio2.webp')}
                 alt='porfolio-img to appear'
                 />
             </Link>
@@ -43,7 +43,7 @@ const Portfolio = () => {
               rel="noreferrer">
               <img
                 className='portfolio-img'
-                src={require('../assets/portfolio3.png')}
+                src={require('../assets/portfolio3.webp')}
                 alt='porfolio-img to appear'
                 />
             </Link>
@@ -57,7 +57,7 @@ const Portfolio = () => {
               rel="noreferrer">
               <img
                 className='portfolio-img'
-                src={require('../assets/portfolio4.png')}
+                src={require('../assets/portfolio4.webp')}
                 alt='porfolio-img to appear'
                 />
             </Link>
@@ -71,7 +71,7 @@ const Portfolio = () => {
               rel="noreferrer">
               <img
                 className='portfolio-img'
-                src={require('../assets/portfolio5.png')}
+                src={require('../assets/portfolio5.webp')}
                 alt='porfolio-img to appear'
                 />
             </Link>
@@ -85,7 +85,7 @@ const Portfolio = () => {
               rel="noreferrer">
               <img
                 className='portfolio-img'
-                src={require('../assets/portfolio6.png')}
+                src={require('../assets/portfolio6.webp')}
                 alt='porfolio-img to appear'
                 />
             </Link>
@@ -99,7 +99,7 @@ const Portfolio = () => {
               rel="noreferrer">
               <img
                 className='portfolio-img'
-                src={require('../assets/portfolio7.png')}
+                src={require('../assets/portfolio7.webp')}
                 alt='porfolio-img to appear'
                 />
             </Link>
