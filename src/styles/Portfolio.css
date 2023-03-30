@@ -38,8 +38,14 @@
 
 .portfolio-img {
   width: 100%;
+  margin: auto;
   cursor: pointer;
   border: 1px solid #e3e4e3;
+  border-radius: 5px;
+}
+
+.portfolio-img:hover {
+  opacity: 75%;
 }
 
 @media screen and (min-width: 768px) { 
