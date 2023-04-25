@@ -22,6 +22,20 @@ const Portfolio = () => {
             <p className='mt-3'>A fully deployed frontend React application for a UK repair business</p>
           </div>
           <div className='portfolio-item'>
+            <h5>RobGPT</h5>
+            <Link 
+              to='https://robgpt.netlify.app'
+              target="_blank"
+              rel="noreferrer">
+              <img
+                className='portfolio-img'
+                src={require('../assets/RobGPT.webp')}
+                alt='porfolio-img to appear'
+                />
+            </Link>
+            <p className='mt-3'>This application is a clone of the ChatGPT language model, built using React and TypeScript. </p>
+          </div>
+          <div className='portfolio-item'>
             <h5>Quizzie Rascal</h5>
             <Link 
               to='https://quizzierascal.netlify.app'
