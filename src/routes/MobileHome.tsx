@@ -8,10 +8,12 @@ import Footer from '../components/Footer';
 import '../styles/Home.css';
 
 interface MobileProps {
-  handleScroll: (elementId : string) => void;
+  aboutMeRef: React.RefObject<HTMLElement>;
+  portfolioRef: React.RefObject<HTMLElement>;
+  handleScroll: (elementId : React.RefObject<HTMLElement>) => void;
 }
 
-const MobileHome = ({ handleScroll } : MobileProps) => {
+const MobileHome = ({ aboutMeRef, portfolioRef, handleScroll } : MobileProps) => {
 
   useLayoutEffect(() => {
     window.scrollTo({
@@ -22,10 +24,13 @@ const MobileHome = ({ handleScroll } : MobileProps) => {
 
   return (
     <main className='mobile-home position-relative w-100'>
-      <Nav handleScroll={handleScroll}/>
+      <Nav
+        aboutMeRef={aboutMeRef}
+        portfolioRef={portfolioRef}
+        handleScroll={handleScroll}/>
       <Intro/>
-      <AboutMe/>
-      <Portfolio/>
+      <AboutMe aboutMeRef={aboutMeRef}/>
+      <Portfolio portfolioRef={portfolioRef}/>
       <Social/>
       <Footer/>
     </main>

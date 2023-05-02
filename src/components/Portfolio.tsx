@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
 import '../styles/Portfolio.css';
 
-const Portfolio = () => {
+interface PortfolioProps {
+  portfolioRef: React.RefObject<HTMLElement>;
+}
+
+const Portfolio = ({ portfolioRef } : PortfolioProps) => {
 
   return (
-    <section className='portfolio-section' id='portfolio'>
+    <section className='portfolio-section' ref={portfolioRef}>
         <h1>My Portfolio</h1>
         <article className='portfolio-article mt-5'>
           <div className='portfolio-item'>

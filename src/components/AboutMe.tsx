@@ -1,9 +1,13 @@
 import '../styles/AboutMe.css';
 
-const AboutMe = () => {
+interface AboutMeProps {
+  aboutMeRef: React.RefObject<HTMLElement>;
+}
+
+const AboutMe = ({ aboutMeRef } : AboutMeProps) => {
 
   return (
-      <section className='aboutme-section' id='aboutme'>
+      <section className='aboutme-section' ref={aboutMeRef}>
         <h1>About Me</h1>
         <article className='aboutme-article px-5 pt-5'>
           <img className='aboutme-img' src={require('../assets/aboutme.webp')} alt='profile-img to appear'/>

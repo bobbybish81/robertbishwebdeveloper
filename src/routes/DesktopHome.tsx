@@ -8,10 +8,12 @@ import Footer from '../components/Footer';
 import '../styles/Home.css';
 
 interface DesktopProps {
-  handleScroll: (elementId : string) => void;
+  aboutMeRef: React.RefObject<HTMLElement>;
+  portfolioRef: React.RefObject<HTMLElement>;
+  handleScroll: (elementId : React.RefObject<HTMLElement>) => void;
 }
 
-const DesktopHome = ({ handleScroll } : DesktopProps) => {
+const DesktopHome = ({ aboutMeRef, portfolioRef, handleScroll } : DesktopProps) => {
 
   useLayoutEffect(() => {
     window.scrollTo({
@@ -22,10 +24,13 @@ const DesktopHome = ({ handleScroll } : DesktopProps) => {
 
   return (
     <main className='desktop-home position-relative w-100'>
-      <Nav handleScroll={handleScroll}/>
+      <Nav
+        aboutMeRef={aboutMeRef}
+        portfolioRef={portfolioRef}
+        handleScroll={handleScroll}/>
       <Intro/>
-      <AboutMe/>
-      <Portfolio/>
+      <AboutMe aboutMeRef={aboutMeRef}/>
+      <Portfolio portfolioRef={portfolioRef}/>
       <Social/>
       <Footer/>
     </main>
