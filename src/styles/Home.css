@@ -44,6 +44,14 @@
   margin: 0;
 }
 
+.desktop-portfolio {
+  display: none;
+}
+
+.mobile-portfolio {
+  display: block;
+}
+
 .welcome-tag:hover,
 .navlink:hover {
   color: #08ee05;
@@ -76,6 +84,14 @@
   .navlink {
     padding-right: 3rem;
     margin: 0;
+  }
+
+  .desktop-portfolio {
+    display: block;
+  }
+  
+  .mobile-portfolio {
+    display: none;
   }
 
 }
