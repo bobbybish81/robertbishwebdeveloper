@@ -7,7 +7,11 @@ import Social from '../components/Social';
 import Footer from '../components/Footer';
 import '../styles/Home.css';
 
-const MobileHome = () => {
+interface MobileProps {
+  handleScroll: (elementId : string) => void;
+}
+
+const MobileHome = ({ handleScroll } : MobileProps) => {
 
   useLayoutEffect(() => {
     window.scrollTo({
@@ -18,7 +22,7 @@ const MobileHome = () => {
 
   return (
     <main className='mobile-home position-relative w-100'>
-      <Nav/>
+      <Nav handleScroll={handleScroll}/>
       <Intro/>
       <AboutMe/>
       <Portfolio/>

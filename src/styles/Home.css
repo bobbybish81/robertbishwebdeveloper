@@ -14,33 +14,37 @@
   background: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding: 1rem;
   color: #fff;
 }
 
 .welcome-tag {
-  margin-top: 1rem;
+  text-decoration: none;
+  color: #fff;
   letter-spacing: 0.2rem;
   font-size: 1.1rem;
   font-weight: 500;
+  margin: 0.75rem auto 1.75rem;
 }
 
 .navbar div {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .navlink {
   text-decoration: none;
   color: #fff;
   padding: 0;
-  margin-bottom: 0.5rem;
   font-weight: 600;
   text-align: center;
+  margin: 0;
 }
 
+.welcome-tag:hover,
 .navlink:hover {
   color: #08ee05;
   cursor: pointer;
@@ -55,18 +59,22 @@
   .desktop-home {
     display: block;
   }
+
+  .welcome-tag {
+    margin: 0;
+  }
   
   .navbar {
     flex-direction: row;
-    justify-content: space-between;
     padding: 2rem 2rem 2rem 4rem;
   }
 
   .navbar div {
-    flex-direction: row;
+    width: fit-content;
   }
+
   .navlink {
-    padding-right: 2rem;
+    padding-right: 3rem;
     margin: 0;
   }
 

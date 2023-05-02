@@ -7,7 +7,11 @@ import Social from '../components/Social';
 import Footer from '../components/Footer';
 import '../styles/Home.css';
 
-const DesktopHome = () => {
+interface DesktopProps {
+  handleScroll: (elementId : string) => void;
+}
+
+const DesktopHome = ({ handleScroll } : DesktopProps) => {
 
   useLayoutEffect(() => {
     window.scrollTo({
@@ -18,7 +22,7 @@ const DesktopHome = () => {
 
   return (
     <main className='desktop-home position-relative w-100'>
-      <Nav/>
+      <Nav handleScroll={handleScroll}/>
       <Intro/>
       <AboutMe/>
       <Portfolio/>

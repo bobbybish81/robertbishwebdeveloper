@@ -9,17 +9,10 @@ const Contact = () => {
   return (
     <main className='contact w-100'>
       <nav className='contact-navbar'>
-        <p className='welcome-tag'>{`</ Welcome >`}</p>
-        <div className='d-flex justify-content-between align-items-center'>
-          <Link to='/' className='navlink'>
-            HOME
-          </Link>
-          <Link to='/contactme' className='navlink'>
-            CONTACT ME
-          </Link>
-        </div>
+        <Link to='/' className='navlink m-4'>
+          GO TO HOMEPAGE
+        </Link>
       </nav>
-      <Social/>
       <section className='mobile-contact-section'>
         <h1 className='contact-section-heading'>Contact Me</h1>
         <article className='contact-article'>
@@ -42,6 +35,7 @@ const Contact = () => {
           </div>
         </article>
       </section>
+      <Social/>
       <Footer/>
     </main>
   );

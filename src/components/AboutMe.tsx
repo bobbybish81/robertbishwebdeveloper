@@ -3,7 +3,7 @@ import '../styles/AboutMe.css';
 const AboutMe = () => {
 
   return (
-      <section className='aboutme-section'>
+      <section className='aboutme-section' id='aboutme'>
         <h1>About Me</h1>
         <article className='aboutme-article px-5 pt-5'>
           <img className='aboutme-img' src={require('../assets/aboutme.webp')} alt='profile-img to appear'/>

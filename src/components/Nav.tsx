@@ -1,16 +1,25 @@
 import { Link } from 'react-router-dom';
 
-const Nav = () => {
+interface NavProps {
+  handleScroll: (elementId : string) => void;
+}
+
+const Nav = ({ handleScroll } : NavProps) => {
 
   return (
     <nav className='navbar'>
-        <p className='welcome-tag'>{`</ Welcome >`}</p>
+        <Link to='/' className='welcome-tag'>
+          {`</ Welcome >`}
+        </Link>
         <div className='d-flex justify-content-between align-items-center'>
-          <Link to='/' className='navlink'>
-            HOME
-          </Link>
+          <p className='navlink' onClick={()=> handleScroll('aboutme') }>
+            ABOUT ME
+          </p>
+          <p className='navlink' onClick={()=> handleScroll('portfolio') }>
+            MY PORTFOLIO
+          </p>
           <Link to='/contactme' className='navlink'>
-            CONTACT ME
+            CONTACT
           </Link>
         </div>
     </nav>
