@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
+  
+    const handleScroll = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    element?.scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <nav className='navbar'>
@@ -8,15 +13,16 @@ const Nav = () => {
           {`</ Welcome >`}
         </Link>
         <div className='d-flex justify-content-between align-items-center'>
-          <p className='navlink' onClick={() => {window.scrollTo({ top: 700, behavior: 'smooth' })}}>
+          <p className='navlink' onClick={() => 
+            window.scrollTo({ top: 700, behavior: 'smooth' })}>
             ABOUT ME
           </p>
-          <p className='desktop-portfolio navlink' onClick={() => {
-            window.scrollTo({ top: 1800, behavior: 'smooth' })}}>
+          <p className='mobile-portfolio navlink' onClick={() => 
+            handleScroll('myportfolio')}>
             MY PORTFOLIO
           </p>
-          <p className='mobile-portfolio navlink' onClick={() => {
-            window.scrollTo({ top: 2525, behavior: 'smooth' })}}>
+          <p className='desktop-portfolio navlink' onClick={() => 
+            window.scrollTo({ top: 1800, behavior: 'smooth' })}>
             MY PORTFOLIO
           </p>
           <Link to='/contactme' className='navlink'>
