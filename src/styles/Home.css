@@ -52,7 +52,6 @@
   display: block;
 }
 
-.welcome-tag:hover,
 .navlink:hover {
   color: #08ee05;
   cursor: pointer;

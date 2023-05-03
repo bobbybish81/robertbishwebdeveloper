@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
   
-    const handleScroll = (elementId: string) => {
+  const handleScroll = (elementId: string) => {
     const element = document.getElementById(elementId);
     element?.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
     <nav className='navbar'>
-        <Link to='/' className='welcome-tag'>
+        <p className='welcome-tag'>
           {`</ Welcome >`}
-        </Link>
+        </p>
         <div className='d-flex justify-content-between align-items-center'>
           <p className='navlink' onClick={() => 
             window.scrollTo({ top: 700, behavior: 'smooth' })}>
