@@ -24,13 +24,13 @@
   margin: 0 2rem;
   padding: 2rem;
   font-weight: 700;
-  color: #075624;
+  color: #2D7689;
   text-align: center;
   border-bottom: 1px solid #d4d3d3;
 }
 
 .contact-article {
-  color: #075624;
+  color: #2D7689;
 }
 
 .contact-form {
@@ -55,8 +55,8 @@
 }
 
 .form-btn {
-  background-color: #075624;
-  border: 1px solid #0c923d;
+  background-color: #163F4D;
+  border: 1px solid #2D7689;
   border-radius: 0.4rem;
   color: #fff;
   margin-top: 2rem;
@@ -64,7 +64,7 @@
 }
   
 .form-btn:hover {
-  background-color: #0c923d;
+  background-color: #205d71;
   cursor: pointer;
 }
 

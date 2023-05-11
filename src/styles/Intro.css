@@ -1,6 +1,8 @@
 .intro-section {
   height: 700px;
-  background-image: url('../assets/desktop-intro.webp');
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(23,58,69,1) 35%, rgba(44,115,134,1) 100%);
+  background-color: #2D7689;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -14,25 +16,26 @@
   letter-spacing: 0.1rem;
 }
 
-.contact-btn {
-  background-color: #075624;
-  border: 1px solid #0c923d;
+.resume-btn {
+  background-color: #163F4D;
+  border: 1px solid #2D7689;
   border-radius: 0.4rem;
   color: #fff;
   margin-top: 2rem;
   padding: 0.75rem 2rem;
 }
 
-.contact-btn:hover {
-  background-color: #0c923d;
+.resume-btn:hover {
+  background-color: #205d71;
   cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
 
   .intro-section {
-    height: 700px;
-    background-image: url('../assets/desktop-intro.webp');
+    background: none;
+    background-image: url('../assets/desktop_intro.webp');
+    background-size: cover;
   }
 
 }

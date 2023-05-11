@@ -22,7 +22,7 @@ const Nav = () => {
             MY PORTFOLIO
           </p>
           <p className='desktop-portfolio navlink' onClick={() => 
-            window.scrollTo({ top: 1800, behavior: 'smooth' })}>
+            window.scrollTo({ top: 2300, behavior: 'smooth' })}>
             MY PORTFOLIO
           </p>
           <Link to='/contactme' className='navlink'>
