@@ -54,7 +54,7 @@
   top: 6rem;
   left: 0;
   background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgb(10,21,26,1) 0%, rgba(23,58,69,1) 35%, rgba(44,115,134,1) 100%);
+  background: linear-gradient(180deg, rgb(9,22,27,1) 0%, rgba(23,58,69,1) 35%, rgba(44,115,134,1) 100%);
   overflow-x: hidden;
   display: flex;
   flex-direction: column;

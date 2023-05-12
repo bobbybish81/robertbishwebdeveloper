@@ -14,7 +14,7 @@ const Nav = () => {
   
   const menuStyles = {
     Active: {
-      height: '25rem',
+      height: '30rem',
       borderBottom: '2px solid #fff'
     },
     Inactive: {
