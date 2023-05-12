@@ -6,18 +6,21 @@
   display: none;
 }
 
-.navbar {
+.mobile-navbar,
+.desktop-navbar {
   width: 100%;
   position: absolute;
   top: 0;
   z-index: 1;
   background: transparent;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   color: #fff;
+}
+
+.desktop-navbar {
+  display: none;
 }
 
 .welcome-tag {
@@ -26,30 +29,49 @@
   letter-spacing: 0.2rem;
   font-size: 1.1rem;
   font-weight: 500;
-  margin: 0.75rem auto 1.75rem;
+  margin: 1rem 0 1rem 0.5rem;
 }
 
-.navbar div {
+.menu-closebtn,
+.menu-openbtn {
+  position: absolute;
+  top: 2rem;
+  right: 0.25rem;
+  background-color: transparent;
+  border: none;
+  margin-right: 1.5rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.mobile-menu {
   width: 100%;
-  justify-content: space-between;
+  position: absolute;
+  border: none;
+  top: 6rem;
+  left: 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgb(10,21,26,1) 0%, rgba(23,58,69,1) 35%, rgba(44,115,134,1) 100%);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  z-index: 99;
 }
 
 .navlink {
   text-decoration: none;
   color: #fff;
   padding: 0;
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
-  margin: 0;
-}
-
-.desktop-portfolio {
-  display: none;
-}
-
-.mobile-portfolio {
-  display: block;
+  margin: 1rem;
 }
 
 .navlink:hover {
@@ -57,6 +79,36 @@
   cursor: pointer;
 }
 
+.nav-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 1rem;
+}
+
+#instagram-nav-icon {
+  height: 2rem;
+  width: 2rem;
+  background-color: #E12F6C;
+  color: #fff;
+  padding: 0.25rem;
+  border-radius: 50%;
+}
+
+#facebook-nav-icon {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#github-nav-icon {
+  color: #2B2E32;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#linkedin-nav-icon {
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
 
 @media screen and (min-width: 768px) {
   .mobile-home {
@@ -67,30 +119,28 @@
     display: block;
   }
 
-  .welcome-tag {
-    margin: 0;
-  }
-  
-  .navbar {
-    flex-direction: row;
+  .desktop-navbar {
+    display: flex;
     padding: 2rem 2rem 2rem 4rem;
+    justify-content: space-between;
   }
 
-  .navbar div {
+  .desktop-navbar div {
     width: fit-content;
+  }
+  
+  .mobile-navbar {
+    display: none;
+  }
+
+  .welcome-tag {
+    margin: 0;
   }
 
   .navlink {
     padding-right: 3rem;
+    font-size: 1rem;
     margin: 0;
-  }
-
-  .desktop-portfolio {
-    display: block;
-  }
-  
-  .mobile-portfolio {
-    display: none;
   }
 
 }

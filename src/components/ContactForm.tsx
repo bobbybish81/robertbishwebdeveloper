@@ -1,25 +1,28 @@
 import { useRef, useLayoutEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
 const ContactForm = () => {
+
+  const navigate = useNavigate();
 
   const form = useRef<HTMLFormElement>(null!);
 
   const sendEmail = (event:React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     emailjs.sendForm(
-      'service_gj84frs',
-      'template_8s9dbcc',
+      'service_71at34s',
+      'template_gqkuzcs',
       form.current,
-      'Pd_1AXpcYSUnKFy3Z'
+      'OQB26M4gIBeopgRas'
       ).then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
     alert('Message sent to robertbishwebdeveloper.com')
-    window.location.reload();
+    navigate('/');
   };
 
   useLayoutEffect(() => {

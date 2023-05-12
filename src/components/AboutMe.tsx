@@ -3,7 +3,7 @@ import '../styles/AboutMe.css';
 const AboutMe = () => {
 
   return (
-      <section className='aboutme-section'>
+      <section className='aboutme-section' id='aboutme'>
         <h1>About Me</h1>
         <article className='aboutme-article px-5 pt-5'>
           <img className='aboutme-img' src={require('../assets/about_me.webp')} alt='profile-img to appear'/>
@@ -18,17 +18,17 @@ const AboutMe = () => {
           <div className='about-text mb-5'>
           <h5>My Interests</h5>
             <img className='hobbies-img' src={require('../assets/family.webp')} alt='hobbies-img to appear'/>
-            <p>{`"Coding holds a special place in my heart as it nurtures my creativity and allows me to apply my problem-solving skills to construct meaningful digital experiences. The joy I derive from transforming an abstract concept into a fully functional application is immeasurable, fueling my passion for continuous growth and innovation."`}</p>
-            <p>{`"Beyond the realms of coding, my heart lies in the world of sports. With football being my first love, I've always had an unwavering dedication to the game. While my childhood dreams of becoming a professional goalkeeper may not have materialized, my passion for the sport remains resolute as I continue to play for a local team here in Stockholm even today. I love the  camaraderie, competition and drive to be the best version of myself, both on and off the field."`}</p>
-            <p>{`"I also enjoy movies, music events and of course spending time with friends and family, especially my two children. The bonds I share with those closest to me are an integral part of who I am, bringing joy, support, and a sense of belonging to life's adventure!"`}</p>
+            <p>{`"Coding holds a special place in my heart as it nurtures my creativity and allows me to apply my problem-solving skills to construct meaningful digital experiences. The satisfaction I get from transforming an abstract concept into a fully functional application is immeasurable, fueling my passion for continuous growth and development."`}</p>
+            <p>{`"Beyond the realms of coding, my heart lies in the world of sports. From a young age football was always first love and my enthusiasm for the game today remains unchanged. While my childhood dreams of becoming a professional goalkeeper may not have materialized, my passion for the sport remains resolute as I continue to play for a local team here in Stockholm even now. I love the  camaraderie, competition and drive to be the best version of myself, both on and off the field."`}</p>
+            <p>{`"I also enjoy movies, music events and of course spending time with friends and family, especially my two children. The bonds I share with those closest to me are an integral part of who I am, bringing fun, support, and a sense of belonging to life's adventure!"`}</p>
           </div>
         </article>
         <article className='desktop-aboutme-article p-5'>
           <div className='about-text'>
             <h5>My Interests</h5>
-            <p>{`"Coding holds a special place in my heart as it nurtures my creativity and allows me to apply my problem-solving skills to construct meaningful digital experiences. The joy I derive from transforming an abstract concept into a fully functional application is immeasurable, fueling my passion for continuous growth and innovation."`}</p>
-            <p>{`"Beyond the realms of coding, my heart lies in the world of sports. With football being my first love, I've always had an unwavering dedication to the game. While my childhood dreams of becoming a professional goalkeeper may not have materialized, my passion for the sport remains resolute as I continue to play for a local team here in Stockholm even today. I love the  camaraderie, competition and drive to be the best version of myself, both on and off the field."`}</p>
-            <p>{`"I also enjoy movies, music events and of course spending time with friends and family, especially my two children. The bonds I share with those closest to me are an integral part of who I am, bringing joy, support, and a sense of belonging to life's adventure!"`}</p>
+            <p>{`"Coding holds a special place in my heart as it nurtures my creativity and allows me to apply my problem-solving skills to construct meaningful digital experiences. The satisfaction I get from transforming an abstract concept into a fully functional application is immeasurable, fueling my passion for continuous growth and development."`}</p>
+            <p>{`"Beyond the realms of coding, my heart lies in the world of sports. From a young age football was always first love and my enthusiasm for the game today remains unchanged. While my childhood dreams of becoming a professional goalkeeper may not have materialized, my passion for the sport remains resolute as I continue to play for a local team here in Stockholm even now. I love the  camaraderie, competition and drive to be the best version of myself, both on and off the field."`}</p>
+            <p>{`"I also enjoy movies, music events and of course spending time with friends and family, especially my two children. The bonds I share with those closest to me are an integral part of who I am, bringing fun, support, and a sense of belonging to life's adventure!"`}</p>
           </div>
           <img className='hobbies-img' src={require('../assets/family.webp')} alt='hobbies-img to appear'/>
         </article>

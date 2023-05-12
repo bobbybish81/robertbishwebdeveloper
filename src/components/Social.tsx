@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Social.css';
 
 const Social = () => {
@@ -31,7 +31,9 @@ const Social = () => {
           to='https://www.linkedin.com/in/robert-bish-1a6a8637'
           target="_blank"
           rel="noreferrer">
-            <FontAwesomeIcon className='social-icon' id='linkedin-icon' icon={faLinkedin}/>
+          <img
+            src={require('../assets/linkedin_icon.webp')} alt='linkedin_logo'
+            className='social-icon' id='linkedin-nav-icon'/>
         </Link>
       </article>
     </section>
