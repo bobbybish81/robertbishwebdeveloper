@@ -78,18 +78,18 @@ const Portfolio = () => {
             <p className='mt-3'>A simple app built using React that uses the <a href='https://icanhazdadjoke.com'>icanhazdadjoke.com</a> API to display random dad jokes for the user.</p>
           </div>
           <div className='portfolio-item'>
-            <h5>Saltazon-Online</h5>
+            <h5>CIKC Store</h5>
             <Link 
-              to='https://saltazon-online.netlify.app'
+              to='https://https://cikc-reloaded-store.netlify.app/.app'
               target="_blank"
               rel="noreferrer">
               <img
                 className='portfolio-img'
-                src={require('../assets/saltazon.webp')}
+                src={require('../assets/cikcstore.webp')}
                 alt='porfolio-img to appear'
                 />
             </Link>
-            <p className='mt-3'>This exercise was to create an eCommerce app (reminiscent of Amazon) where users can make a mock purchase and administrators can add, change or delete their own products.</p>
+            <p className='mt-3'>This project was a collaboration with fellow Salt graduatesw to create a user-friendly eCommerce MERN app (reminiscent of IKEA) where users can view over 200 products and make place a mock order</p>
           </div>
           <div className='portfolio-item'>
             <h5>The Milk Store</h5>

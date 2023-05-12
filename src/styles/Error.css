@@ -1,0 +1,48 @@
+.error-section {
+  display: block;
+  height: 100vh;
+  min-width: 350px;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(23,58,69,1) 35%, rgba(44,115,134,1) 100%);
+  margin: 0;
+  border: 1px solid #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: fadein 1s;
+}
+
+.error-article {
+  height: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.error-article h1 {
+  width: 30rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.error-link {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.error-link:hover {
+  color: #3495b6;
+  cursor: pointer;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

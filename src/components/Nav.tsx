@@ -23,10 +23,19 @@ const Nav = () => {
     }
   }
 
-  const handleScroll = (elementId: string) => {
+  const mobileScroll = (elementId: string) => {
     const element = document.getElementById(elementId);
     element?.scrollIntoView({ behavior: 'smooth' });
+    menuToggle()
   }
+
+  const scrollToAboutMe = () => {
+    window.scrollTo({ top: 700, behavior: 'smooth' });
+  };
+
+  const scrollToPortfolio = () => {
+    window.scrollTo({ top: 2300, behavior: 'smooth' });
+  };
 
   return (
     <>
@@ -39,21 +48,19 @@ const Nav = () => {
           className='menu-closebtn' onClick={menuToggle}/> :
         <IoMenu
           className='menu-openbtn' onClick={menuToggle}/>}
-      <div
-        className={`mobile-menu ${openMenu ? 'active' : ''}`}
-        style={openMenu ? menuStyles.Active : menuStyles.Inactive}>
-          <p className='navlink' onClick={() => {
-            handleScroll('aboutme');
-            menuToggle();
-            }}>
-            ABOUT ME
-          </p>
-          <p className='navlink' onClick={() => {
-            handleScroll('myportfolio');
-            menuToggle();
-            }}>
-            MY PORTFOLIO
-          </p>
+        <div
+          className={`mobile-menu ${openMenu ? 'active' : ''}`}
+          style={openMenu ? menuStyles.Active : menuStyles.Inactive}>
+          <Link to='/' className='navlink' onClick={() => {
+              mobileScroll('aboutme');
+              }}>
+              ABOUT ME
+          </Link>
+          <Link to='/' className='navlink' onClick={() => {
+              mobileScroll('myportfolio');
+              }}>
+              MY PORTFOLIO
+          </Link>
           <Link to='/contactme' className='navlink' onClick={menuToggle}>
             CONTACT
           </Link>
@@ -96,14 +103,12 @@ const Nav = () => {
           {`</ Welcome >`}
         </p>
         <div className='d-flex justify-content-between align-items-center'>
-          <p className='navlink' onClick={() => 
-            window.scrollTo({ top: 700, behavior: 'smooth' })}>
+          <Link to='/' className='navlink' onClick={()=> setTimeout(scrollToAboutMe, 0)}>
             ABOUT ME
-          </p>
-          <p className='desktop-portfolio navlink' onClick={() => 
-            window.scrollTo({ top: 2300, behavior: 'smooth' })}>
+          </Link>
+          <Link to='/' className='navlink' onClick={()=> setTimeout(scrollToPortfolio, 0)}>
             MY PORTFOLIO
-          </p>
+          </Link>
           <Link to='/contactme' className='navlink'>
             CONTACT
           </Link>

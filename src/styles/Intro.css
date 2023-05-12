@@ -2,18 +2,22 @@
   height: 700px;
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(23,58,69,1) 35%, rgba(44,115,134,1) 100%);
-  background-color: #2D7689;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   color: #fff;
+  animation: fadein 1s;
+}
+
+.intro-text, .skills {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
 }
 
 .intro-text {
-  font-weight: 700;
-  letter-spacing: 0.1rem;
+  font-size: 1.75rem;
 }
 
 .resume-btn {
@@ -38,4 +42,13 @@
     background-size: cover;
   }
 
+  .intro-text {
+    font-size: 2.5rem;
+  }
+
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
