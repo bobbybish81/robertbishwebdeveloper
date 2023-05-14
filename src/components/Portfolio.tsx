@@ -89,7 +89,7 @@ const Portfolio = () => {
                 alt='porfolio-img to appear'
                 />
             </Link>
-            <p className='mt-3'>This project was a collaboration with fellow Salt graduatesw to create a user-friendly eCommerce MERN app (reminiscent of IKEA) where users can view over 200 products and make place a mock order</p>
+            <p className='mt-3'>This project was a collaboration with fellow Salt graduates to create a user-friendly eCommerce MERN app (reminiscent of IKEA) where users can view over 200 products and place a mock order</p>
           </div>
           <div className='portfolio-item'>
             <h5>The Milk Store</h5>
