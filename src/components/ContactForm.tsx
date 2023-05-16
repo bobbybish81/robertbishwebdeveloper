@@ -9,22 +9,20 @@ const ContactForm = () => {
 
   const form = useRef<HTMLFormElement>(null!);
 
-  const emailjsService = process.env.EMAILJS_SERVICE || '';
-  const emailjsTemplate = process.env.EMAILJS_TEMPLATE || '';
-  const emailjsPublicKey = process.env.EMAILJS_PUBLICKEY || '';
-
   const sendEmail = (event:React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    emailjs.sendForm(
-      emailjsService,
-      emailjsTemplate,
-      form.current,
-      emailjsPublicKey
-      ).then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    if (process.env.EMAILJS_SERVICE && process.env.EMAILJS_TEMPLATE) {
+      emailjs.sendForm(
+        process.env.EMAILJS_SERVICE,
+        process.env.EMAILJS_TEMPLATE,
+        form.current,
+        process.env.EMAILJS_PUBLICKEY
+        ).then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    }
     alert('Message sent to robertbishwebdeveloper.com')
     navigate('/');
   };
