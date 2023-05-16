@@ -11,7 +11,7 @@ const ContactForm = () => {
 
   const emailjsService = process.env.EMAILJS_SERVICE || '';
   const emailjsTemplate = process.env.EMAILJS_TEMPLATE || '';
-  const emailjsApiKey = process.env.EMAILJS_APIKEY || '';
+  const emailjsPublicKey = process.env.EMAILJS_PUBLICKEY || '';
 
   const sendEmail = (event:React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -19,7 +19,7 @@ const ContactForm = () => {
       emailjsService,
       emailjsTemplate,
       form.current,
-      emailjsApiKey
+      emailjsPublicKey
       ).then((result) => {
           console.log(result.text);
       }, (error) => {
