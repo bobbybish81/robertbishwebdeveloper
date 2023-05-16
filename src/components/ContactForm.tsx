@@ -11,20 +11,21 @@ const ContactForm = () => {
 
   const sendEmail = (event:React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (process.env.EMAILJS_SERVICE && process.env.EMAILJS_TEMPLATE) {
-      emailjs.sendForm(
-        process.env.EMAILJS_SERVICE,
-        process.env.EMAILJS_TEMPLATE,
-        form.current,
-        process.env.EMAILJS_PUBLICKEY
-        ).then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-    }
-    alert('Message sent to robertbishwebdeveloper.com')
-    navigate('/');
+    const service = process.env.REACT_APP_SERVICE || '';
+    const template = process.env.REACT_APP_TEMPLATE || '';
+    const publicKey = process.env.REACT_APP_PUBLICKEY || '';
+    emailjs.sendForm(
+      service,
+      template,
+      form.current,
+      publicKey
+      ).then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      alert('Message sent to robertbishwebdeveloper.com')
+      navigate('/');
   };
 
   useLayoutEffect(() => {
