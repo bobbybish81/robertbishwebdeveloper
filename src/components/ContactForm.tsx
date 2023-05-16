@@ -9,13 +9,17 @@ const ContactForm = () => {
 
   const form = useRef<HTMLFormElement>(null!);
 
+  const emailjsService = process.env.EMAILJS_SERVICE || '';
+  const emailjsTemplate = process.env.EMAILJS_TEMPLATE || '';
+  const emailjsApiKey = process.env.EMAILJS_APIKEY || '';
+
   const sendEmail = (event:React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     emailjs.sendForm(
-      'service_71at34s',
-      'template_gqkuzcs',
+      emailjsService,
+      emailjsTemplate,
       form.current,
-      'OQB26M4gIBeopgRas'
+      emailjsApiKey
       ).then((result) => {
           console.log(result.text);
       }, (error) => {
