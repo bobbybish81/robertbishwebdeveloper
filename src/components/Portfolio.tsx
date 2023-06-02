@@ -64,20 +64,6 @@ const Portfolio = () => {
             <p className='mt-3'>A game where the user has to find the city on a map when prompted to within 50km</p>
           </div>
           <div className='portfolio-item'>
-            <h5>Dad Jokes App</h5>
-            <Link 
-              to='https://dad-jokes-rbwd.netlify.app'
-              target="_blank"
-              rel="noreferrer">
-              <img
-                className='portfolio-img'
-                src={require('../assets/dadjokes.webp')}
-                alt='porfolio-img to appear'
-                />
-            </Link>
-            <p className='mt-3'>A simple app built using React that uses the <a href='https://icanhazdadjoke.com'>icanhazdadjoke.com</a> API to display random dad jokes for the user.</p>
-          </div>
-          <div className='portfolio-item'>
             <h5>CIKC Store</h5>
             <Link 
               to='https://https://cikc-reloaded-store.netlify.app/.app'
@@ -94,7 +80,7 @@ const Portfolio = () => {
           <div className='portfolio-item'>
             <h5>The Milk Store</h5>
             <Link 
-              to='https://github.com/bobbybish81/typescript-test-milkApp-vite'
+              to='https://themilkstore.netlify.app/'
               target="_blank"
               rel="noreferrer">
               <img
@@ -104,34 +90,6 @@ const Portfolio = () => {
                 />
             </Link>
             <p className='mt-3'>This exercise was to create an application using React & Typescript which retrieves and displays mock data from an api that the user can be easily navigate through and place a mock order.</p>
-          </div>
-          <div className='portfolio-item'>
-            <h5>Blog App</h5>
-            <Link 
-              to='https://github.com/bobbybish81/typescript-test-tiny-blog'
-              target="_blank"
-              rel="noreferrer">
-              <img
-                className='portfolio-img'
-                src={require('../assets/blogapp.webp')}
-                alt='porfolio-img to appear'
-                />
-            </Link>
-            <p className='mt-3'>A exercise to create a blog using React and Typescript that connect to this API <a href='https://dummyjson/posts'>https://dummyjson/posts</a> and display the posts as a list of cards.</p>
-          </div>
-          <div className='portfolio-item'>
-            <h5>Puppy Gallery</h5>
-            <Link 
-              to='https://github.com/bobbybish81/typescript-lab-puppiesfullstack'
-              target="_blank"
-              rel="noreferrer">
-              <img
-                className='portfolio-img'
-                src={require('../assets/puppygallery.webp')}
-                alt='porfolio-img to appear'
-                />
-            </Link>
-            <p className='mt-3'>A exercise to create a fullstack application for puppy lovers using React and Typescript</p>
           </div>
         </article>
       </section>
