@@ -66,7 +66,7 @@ const Portfolio = () => {
           <div className='portfolio-item'>
             <h5>CIKC Store</h5>
             <Link 
-              to='https://https://cikc-reloaded-store.netlify.app/.app'
+              to='https://cikc-reloaded-store.netlify.app'
               target="_blank"
               rel="noreferrer">
               <img
