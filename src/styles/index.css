@@ -1,4 +1,10 @@
+/* @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Numans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
+  /* font-family: 'Numans', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }

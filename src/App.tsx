@@ -8,16 +8,16 @@ import Error from './routes/Error';
 const App = () => {
   
   return (
-    <Routes>
-      <Route path='/' element={
-      <>
-        <MobileHome/>
-        <DesktopHome/>
-      </>}></Route>
-      <Route path='/resume' element={<Resume/>}></Route>
-      <Route path='/contactme' element={<Contact/>}></Route>
-      <Route path='/*' element={<Error/>}></Route>
-    </Routes>
+      <Routes>
+        <Route path='/' element={
+        <>
+          <MobileHome/>
+          <DesktopHome/>
+        </>}></Route>
+        <Route path='/resume' element={<Resume/>}></Route>
+        <Route path='/contactme' element={<Contact/>}></Route>
+        <Route path='/*' element={<Error/>}></Route>
+      </Routes>
   );
 }
 
