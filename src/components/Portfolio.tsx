@@ -22,6 +22,20 @@ const Portfolio = () => {
             <p className='mt-3'>A fully deployed frontend React application for a UK repair business</p>
           </div>
           <div className='portfolio-item'>
+            <h5>Akysec Information Security Consultants</h5>
+            <Link 
+              to='https://www.akysec.com'
+              target="_blank"
+              rel="noreferrer">
+              <img
+                className='portfolio-img'
+                src={require('../assets/akysec.webp')}
+                alt='porfolio-img to appear'
+                />
+            </Link>
+            <p className='mt-3'>A fully deployed frontend React application for an Information Security Consultancy business built using TypeScript and Sanity CMS</p>
+          </div>
+          <div className='portfolio-item'>
             <h5>RobGPT</h5>
             <Link 
               to='https://robgpt.netlify.app'
