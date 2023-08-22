@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://robertbishwebdeveloper.com
+
+# Sitemaps
+Sitemap: https://robertbishwebdeveloper.com/sitemap.xml
