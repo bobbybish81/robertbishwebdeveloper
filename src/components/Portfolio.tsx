@@ -19,7 +19,7 @@ const Portfolio = () => {
                 alt='porfolio-img to appear'
                 />
             </Link>
-            <p className='mt-3'>A fully deployed frontend React application for a UK repair business</p>
+            <p className='mt-3'>A fully deployed frontend React application for a UK based surface repair business.</p>
           </div>
           <div className='portfolio-item'>
             <h5>Akysec</h5>
@@ -33,7 +33,7 @@ const Portfolio = () => {
                 alt='porfolio-img to appear'
                 />
             </Link>
-            <p className='mt-3'>A fully deployed frontend React application for an Information Security Consultancy business built using TypeScript and Sanity CMS</p>
+            <p className='mt-3'>A fully deployed frontend React application for an Information Security Consultancy business built using TypeScript and Sanity CMS.</p>
           </div>
           <div className='portfolio-item'>
             <h5>RobGPT</h5>
