@@ -8,7 +8,7 @@ const Portfolio = () => {
         <h1>My Portfolio</h1>
         <article className='portfolio-article mt-5'>
           <div className='portfolio-item'>
-            <h5>Revive Ltd: Hard Surface Repair Specialists</h5>
+            <h5>Revive Repairs</h5>
             <Link 
               to='https://www.reviverepairs.com'
               target="_blank"
@@ -22,7 +22,7 @@ const Portfolio = () => {
             <p className='mt-3'>A fully deployed frontend React application for a UK repair business</p>
           </div>
           <div className='portfolio-item'>
-            <h5>Akysec Information Security Consultants</h5>
+            <h5>Akysec</h5>
             <Link 
               to='https://www.akysec.com'
               target="_blank"
