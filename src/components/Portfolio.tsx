@@ -19,7 +19,7 @@ const Portfolio = () => {
                 alt='porfolio-img to appear'
                 />
             </Link>
-            <p className='mt-3'>A fully deployed frontend React application for a UK based surface repair business.</p>
+            <p className='mt-3'>A fully deployed website for a UK based surface repair business built using React.</p>
           </div>
           <div className='portfolio-item'>
             <h5>Akysec</h5>
@@ -36,6 +36,20 @@ const Portfolio = () => {
             <p className='mt-3'>A fully deployed frontend React application for an Information Security Consultancy business built using TypeScript and Sanity CMS.</p>
           </div>
           <div className='portfolio-item'>
+            <h5>Adilia</h5>
+            <Link 
+              to='https://www.adilia.se'
+              target="_blank"
+              rel="noreferrer">
+              <img
+                className='portfolio-img'
+                src={require('../assets/adilia.webp')}
+                alt='porfolio-img to appear'
+                />
+            </Link>
+            <p className='mt-3'>A fully deployed frontend React application for a business development, marketing and strategy business built using TypeScript</p>
+          </div>
+          <div className='portfolio-item'>
             <h5>RobGPT</h5>
             <Link 
               to='https://robgpt.netlify.app'
@@ -47,7 +61,7 @@ const Portfolio = () => {
                 alt='porfolio-img to appear'
                 />
             </Link>
-            <p className='mt-3'>This application is a clone of the ChatGPT language model, built using React and TypeScript. </p>
+            <p className='mt-3'>This application is a clone of the ChatGPT language model, built using React and TypeScript.</p>
           </div>
           <div className='portfolio-item'>
             <h5>Quizzie Rascal</h5>
@@ -61,7 +75,7 @@ const Portfolio = () => {
                 alt='porfolio-img to appear'
                 />
             </Link>
-            <p className='mt-3'>Quizzie Rascal is a fully deployed quiz game that presents the user with 10 random questions with 4 possible answers that are to be answered as quickly as possible.</p>
+            <p className='mt-3'>Quizzie Rascal is a fully deployed quiz game application built using React and TypeScript that presents the user with 10 random questions with 4 possible answers.</p>
           </div>
           <div className='portfolio-item'>
             <h5>City Finder</h5>
@@ -75,7 +89,7 @@ const Portfolio = () => {
                 alt='porfolio-img to appear'
                 />
             </Link>
-            <p className='mt-3'>A game where the user has to find the city on a map when prompted to within 50km</p>
+            <p className='mt-3'>A game where the user has to find the city on a map when prompted to within 50km built using Next.js and TypeScript</p>
           </div>
           <div className='portfolio-item'>
             <h5>CIKC Store</h5>
@@ -103,7 +117,7 @@ const Portfolio = () => {
                 alt='porfolio-img to appear'
                 />
             </Link>
-            <p className='mt-3'>This exercise was to create an application using React & Typescript which retrieves and displays mock data from an api that the user can be easily navigate through and place a mock order.</p>
+            <p className='mt-3'>This exercise was to create an application using React and Typescript which retrieves and displays mock data from an api that the user can be easily navigate through and place a mock order.</p>
           </div>
         </article>
       </section>
