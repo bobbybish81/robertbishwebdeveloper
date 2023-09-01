@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+
+
 .intro-section {
   height: 700px;
   background: rgb(0,0,0);
@@ -7,12 +10,13 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  color: #fff;
+  color: #eeeded;
   animation: fadein 2s ease-in-out;
 }
 
 .intro-text, .skills {
-  font-weight: 700;
+  font-family: 'Saira Stencil One', cursive;
+  /* font-weight: 700; */
   letter-spacing: 0.1rem;
   text-shadow: -0.5px 0 #8e8f8f, 0 0.5px #8e8f8f, 0.5px 0 #8e8f8f, 0 -0.5px #8e8f8f;
 }
