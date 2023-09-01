@@ -16,7 +16,6 @@
 
 .intro-text, .skills {
   font-family: 'Saira Stencil One', cursive;
-  /* font-weight: 700; */
   letter-spacing: 0.1rem;
   text-shadow: -0.5px 0 #8e8f8f, 0 0.5px #8e8f8f, 0.5px 0 #8e8f8f, 0 -0.5px #8e8f8f;
 }
