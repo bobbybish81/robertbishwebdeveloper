@@ -29,12 +29,8 @@ const Nav = () => {
     menuToggle()
   }
 
-  const scrollToAboutMe = () => {
-    window.scrollTo({ top: 2300, behavior: 'smooth' });
-  };
-
   const scrollToSkills = () => {
-    window.scrollTo({ top: 3000, behavior: 'smooth' });
+    window.scrollTo({ top: 2300, behavior: 'smooth' });
   };
 
   const scrollToPortfolio = () => {
@@ -59,11 +55,6 @@ const Nav = () => {
               mobileScroll('myportfolio');
               }}>
               PROJECTS
-          </Link>
-          <Link to='/' className='navlink' onClick={() => {
-              mobileScroll('aboutme');
-              }}>
-              ABOUT
           </Link>
           <Link to='/' className='navlink' onClick={() => {
               mobileScroll('skills');
@@ -114,9 +105,6 @@ const Nav = () => {
         <div className='d-flex justify-content-between align-items-center'>
           <Link to='/' className='navlink' onClick={()=> setTimeout(scrollToPortfolio, 0)}>
             PROJECTS
-          </Link>
-          <Link to='/' className='navlink' onClick={()=> setTimeout(scrollToAboutMe, 0)}>
-            ABOUT
           </Link>
           <Link to='/' className='navlink' onClick={()=> setTimeout(scrollToSkills, 0)}>
             SKILLS
