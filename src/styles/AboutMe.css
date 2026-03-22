@@ -22,7 +22,7 @@
   border-bottom: 1px solid #d4d3d3;
 }
 
-.aboutme-img, .hobbies-img {
+.aboutme-img {
   margin: 0;
   width: 100%;
 }
@@ -33,21 +33,26 @@
 }
 
 .about-text {
+  text-align: center;
   width: 100%;
   margin: 0;
   padding: 0;
   color: #6c6b6b;
 }
 
-.about-text h5 {
-  font-weight: 550;
+.about-text h2 {
+  font-weight: bolder;
   margin: 2rem 0;
-  color: #2D7689;;
+  color: #2D7689;
 }
 
 .about-text p {
-  font-style: italic;
   font-size: 1rem;
+  color: #2D7689;
+}
+
+.skills-img {
+  width: 100%;
 }
 
 @media screen and (min-width: 1280px) {
@@ -60,22 +65,25 @@
   .desktop-aboutme-article {
     display: flex;
     flex-direction: row;
+    padding-bottom: 2rem;
   }
 
-  .aboutme-img, .hobbies-img {
+  .aboutme-img {
     width: 50%;
   }
 
-  .hobbies-img {
-    margin: 0;
-  }
-
   .about-text {
+    text-align: left;
     width: 50%;
     padding: 0 2rem;
   }
 
   .about-text p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
+
+  .skills-img {
+    width: 75%;
+  }
+
 }

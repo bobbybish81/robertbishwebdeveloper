@@ -20,8 +20,8 @@ const MobileHome = () => {
     <main className='mobile-home position-relative w-100'>
       <Nav/>
       <Intro/>
-      <AboutMe/>
       <Portfolio/>
+      <AboutMe/>
       <Social/>
       <Footer/>
     </main>

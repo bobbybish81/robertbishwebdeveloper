@@ -20,8 +20,8 @@ const DesktopHome = () => {
     <main className='desktop-home position-relative w-100'>
       <Nav/>
       <Intro/>
-      <AboutMe/>
       <Portfolio/>
+      <AboutMe/>
       <Social/>
       <Footer/>
     </main>

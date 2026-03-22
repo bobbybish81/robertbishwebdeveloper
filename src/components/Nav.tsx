@@ -30,11 +30,15 @@ const Nav = () => {
   }
 
   const scrollToAboutMe = () => {
-    window.scrollTo({ top: 700, behavior: 'smooth' });
+    window.scrollTo({ top: 2300, behavior: 'smooth' });
+  };
+
+  const scrollToSkills = () => {
+    window.scrollTo({ top: 3000, behavior: 'smooth' });
   };
 
   const scrollToPortfolio = () => {
-    window.scrollTo({ top: 2300, behavior: 'smooth' });
+    window.scrollTo({ top: 700, behavior: 'smooth' });
   };
 
   return (
@@ -52,14 +56,19 @@ const Nav = () => {
           className={`mobile-menu ${openMenu ? 'active' : ''}`}
           style={openMenu ? menuStyles.Active : menuStyles.Inactive}>
           <Link to='/' className='navlink' onClick={() => {
-              mobileScroll('aboutme');
-              }}>
-              ABOUT ME
-          </Link>
-          <Link to='/' className='navlink' onClick={() => {
               mobileScroll('myportfolio');
               }}>
-              MY PORTFOLIO
+              PROJECTS
+          </Link>
+          <Link to='/' className='navlink' onClick={() => {
+              mobileScroll('aboutme');
+              }}>
+              ABOUT
+          </Link>
+          <Link to='/' className='navlink' onClick={() => {
+              mobileScroll('skills');
+              }}>
+              SKILLS
           </Link>
           <Link to='/contactme' className='navlink' onClick={menuToggle}>
             CONTACT
@@ -103,11 +112,14 @@ const Nav = () => {
           {`</ Welcome >`}
         </p>
         <div className='d-flex justify-content-between align-items-center'>
-          <Link to='/' className='navlink' onClick={()=> setTimeout(scrollToAboutMe, 0)}>
-            ABOUT ME
-          </Link>
           <Link to='/' className='navlink' onClick={()=> setTimeout(scrollToPortfolio, 0)}>
-            MY PORTFOLIO
+            PROJECTS
+          </Link>
+          <Link to='/' className='navlink' onClick={()=> setTimeout(scrollToAboutMe, 0)}>
+            ABOUT
+          </Link>
+          <Link to='/' className='navlink' onClick={()=> setTimeout(scrollToSkills, 0)}>
+            SKILLS
           </Link>
           <Link to='/contactme' className='navlink'>
             CONTACT
