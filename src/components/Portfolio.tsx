@@ -78,6 +78,20 @@ const Portfolio = () => {
             <p className='mt-3'>This exercise was to create an application using React and Typescript which retrieves and displays mock data from an api that the user can be easily navigate through and place a mock order.</p>
           </div>
          <div className='portfolio-item'>
+            <h5>Dad Jokes</h5>
+            <Link 
+              to='https://dad-jokes-rbwd.netlify.app'
+              target="_blank"
+              rel="noreferrer">
+              <img
+                className='portfolio-img'
+                src={require('../assets/dadjokes.webp')}
+                alt='porfolio-img to appear'
+                />
+            </Link>
+            <p className='mt-3'>This application was built (for my daughter) using React and TypeScript which fetches random Dad Jokes from an api. .</p>
+          </div>          
+         <div className='portfolio-item'>
             <h5>RobGPT</h5>
             <Link 
               to='https://robgpt.netlify.app'
